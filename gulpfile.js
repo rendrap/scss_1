@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     webserver = require('gulp-webserver');
+    var plumber = require('gulp-plumber');
 
 gulp.task('js', function() {
   return gulp.src('builds/sassEssentials/js/myscript.js')
@@ -15,6 +16,7 @@ gulp.task('sass', function () {
       sourcemap: true,
       style: 'compressed'
     })
+    .pipe(plumber())
     .on('error', function (err) {
         console.error('Error!', err.message);
     })
