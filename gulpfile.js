@@ -14,7 +14,7 @@ gulp.task('js', function() {
 gulp.task('sass', function () {
     return sass('process/sass/style.scss', {
       sourcemap: true,
-      style: 'compressed'
+      style: 'expanded'
     })
     .pipe(plumber())
     .on('error', function (err) {
