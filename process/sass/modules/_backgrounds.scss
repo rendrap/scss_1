@@ -26,6 +26,10 @@
 }
 
 .jumbotron {
-	background: $darkblue;
-	height: 600px;
+	@include backImage('../images/mascaloona.jpg', 600px);
+}
+
+.bridge {
+	@include backImage('../images/supernova.png',
+	300px);
 }

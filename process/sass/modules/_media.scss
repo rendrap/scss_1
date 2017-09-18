@@ -8,9 +8,16 @@ $color-media-head: $blue;
   list-style : none;
 
   .item {
-    margin-bottom: 20px;
-    border-top: 1px dotted $color-item-border;
     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-top: 1px dotted $color-item-border;
+    &:hover {
+      background: $yellow;
+    }
+    &:last-of-type {
+      border-bottom: 1px dotted $color-item-border;
+    }
   }
 
   .head {
