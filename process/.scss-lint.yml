@@ -1,0 +1,6 @@
+# scss_files: 'C:\\Delete_me\\sassEssentials\\process\\sass\\*.scss.css'
+
+linters:
+  HexNotation:
+    enabled: true
+    style: uppercase

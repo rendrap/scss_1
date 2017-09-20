@@ -1,35 +1,36 @@
 .background {
-	color: $color-background;
-	margin: 20px 0;
-	width: 100%;
-	display: table;
+  color: $color-background;
+  display: table;
+  margin: 20px 0;
+  width: 100%;
 
-	.container {
-		display: table-cell;
-		vertical-align: bottom;
-		padding-bottom: 20px;
+  .container {
+    display: table-cell;
+    padding-bottom: 20px;
+    vertical-align: bottom;
 
-		h1 {
-			color: $yellow;
-			font-family: $font-main;
-			font-size: 5rem;
-			line-height: 105%;
-			margin-bottom: 0;
-			padding: 0 10%;
-		}
+    h1 {
+      color: $yellow;
+      font-family: $font-main;
+      font-size: 5rem;
+      line-height: 105%;
+      margin-bottom: 0;
+      padding: 0 10%;
+    }
 
-		p {
-			padding: 0 10%;
-			margin-top: 0;
-		}
-	}
+    p {
+      margin-top: 0;
+      padding: 0 10%;
+    }
+  }
 }
 
 .jumbotron {
-	@include backImage('../images/mascaloona.jpg', 600px);
+  @include backimage('../images/mascaloona.jpg', 600px);
+  margin-top: 0;
 }
 
 .bridge {
-	@include backImage('../images/supernova.png',
-	300px);
+  @include backimage('../images/supernova.png',
+  300px);
 }

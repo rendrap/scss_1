@@ -3,28 +3,36 @@ $color-media-head: $blue;
 
 
 .media {
-  margin     : 0;
-  padding    : 0;
-  list-style : none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
   .item {
-    padding-top: 10px;
+    @include clearfix;
+    border-top: 1px dotted $color-item-border;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-top: 1px dotted $color-item-border;
+    padding-top: 10px;
+
     &:hover {
       background: $yellow;
     }
+
     &:last-of-type {
       border-bottom: 1px dotted $color-item-border;
     }
+
   }
+
 
   .head {
     margin: 0;
     padding: 0;
     color : $color-media-head;
     font-size: 1.5rem;
+    #typography & {
+      color : $red;
+    }
   }
 
   p {
