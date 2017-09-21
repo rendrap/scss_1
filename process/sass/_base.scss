@@ -12,11 +12,19 @@ body {
 }
 
 .container {
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
 }
+
+$color-headlines: $blue, $purple, $green, $red, $orange, $yellow;
 
 h1,h2,h3,h4,h5 {
   font-family: $font-highlight;
-  color: $color-headline;
+  // color: $color-headline;
+}
+
+@for $item from 1 through length($color-headlines) {
+  h#{$item} {
+    color: nth($color-headlines, $item);
+  }
 }
