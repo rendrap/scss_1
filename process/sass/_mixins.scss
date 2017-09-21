@@ -45,10 +45,8 @@
     @media (min-width: nth($args, 1)) {
       @content;
     }
-  }
-
-  @if length($args) == 2 {
-    @media (min-width: nth($args1, 1)) and (max-width: nth($args2, 2)) {
+  } @else {
+    @media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
       @content;
     }
   }

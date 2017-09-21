@@ -57,6 +57,11 @@ nav {
     background-color: darken($blue, 15%);
     margin-top: 20px;
     min-height: 200px;
+
+    @include break(0, 500px) {
+      display: none;
+    }
+
   }
 
 
