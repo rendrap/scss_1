@@ -18,15 +18,17 @@ $roundness: 20px 0 20px 0;
   white-space: nowrap;
 }
 
-$color-btn-names: 'default', 'hot', 'cool';
-$color-btn-values: $color-main, $red, $blue;
+$color-btn: (
+  default: $color-main,
+  hot: $red,
+  cool: $blue,
+  awesome: $purple,
+  );
 
-@each $name in $color-btn-names {
-  $i: index($color-btn-names, $name);
-
-  .btn-#{$name} {
+@each $key, $value in $color-btn {
+  .btn-#{$key} {
     @extend %btn;
-    background-color: nth($color-btn-values, $i);
+    background-color: $value;
   }
 }
 
